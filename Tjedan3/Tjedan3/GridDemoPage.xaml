@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tjedan3.GridDemoPage">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="100"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label BackgroundColor="Blue" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="Auto-sized cell"/>
+            <BoxView Grid.Row="0" Grid.Column="1" BackgroundColor="Silver"/>
+            <Label Grid.RowSpan="2" Grid.Column="2" BackgroundColor="Blue" TextColor="Yellow" Text="Span two rows" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            <Label Grid.Row="1" BackgroundColor="Teal"/>
+            <Label Grid.Row="1" Grid.Column="1" BackgroundColor="Aqua" TextColor="Purple" Text="Leftover space" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            <Label Grid.Row="2" Grid.ColumnSpan="2" BackgroundColor="Yellow" TextColor="Blue" Text="Span two columns" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            <Label Grid.Row="2" Grid.Column="2" BackgroundColor="Red" Text="Fixed 100x100" HorizontalTextAlignment="Center" TextColor="Aqua" VerticalTextAlignment="Center"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
